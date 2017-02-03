@@ -8,11 +8,44 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {font-family: "CelticG";
+  src: url("assets/fonts/CelticG.eot"); /* IE9*/
+  src: url("assets/fonts/CelticG.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("assets/fonts/CelticG.woff2") format("woff2"), /* chrome、firefox */
+  url("assets/fonts/CelticG.woff") format("woff"), /* chrome、firefox */
+  url("assets/fonts/CelticG.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("assets/fonts/CelticG.svg#CelticG") format("svg"); /* iOS 4.1- */
+}
+
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  background-image: url('assets/img/ulfsark-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1600px;
   color: $color__text-main;
+  font-family: "CelticG", "Open Sans", sans-serif;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p {
+  font-weight: bold;
+}
+
+span {
+  font-weight: bold;
+}
+
+.header-logo-full {
+  height: auto;
+  max-width: 60%;
+  margin: 0 auto;
+  display: block;
 }
 
 @import "content-sidebar";

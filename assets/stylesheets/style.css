@@ -574,11 +574,11 @@ table {
 # Links
 --------------------------------------------------------------*/
 a {
-  color: #ffea00; }
+  color: #ffe000; }
   a:visited {
-    color: #ffea00; }
+    color: purple; }
   a:hover, a:focus, a:active {
-    color: #ffd000; }
+    color: midnightblue; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -596,38 +596,12 @@ html {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit; }
 
-@font-face {
-  font-family: "CelticG";
-  src: url("assets/fonts/CelticG.eot");
-  /* IE9*/
-  src: url("assets/fonts/CelticG.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CelticG.woff2") format("woff2"), url("assets/fonts/CelticG.woff") format("woff"), url("assets/fonts/CelticG.ttf") format("truetype"), url("assets/fonts/CelticG.svg#CelticG") format("svg");
-  /* iOS 4.1- */ }
 body {
   background: #000020;
   /* Fallback for when there is no custom background color defined. */
-  background-image: url("assets/img/ulfsark-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   margin: 0 auto;
-  max-width: 1600px;
-  color: #ddd;
-  font-family: "CelticG", "Open Sans", sans-serif; }
-
-a {
-  font-weight: bold;
-  text-decoration: none; }
-
-p {
-  font-weight: bold; }
-
-span {
-  font-weight: bold; }
-
-.header-logo-full {
-  height: auto;
-  max-width: 60%;
-  margin: 0 auto;
-  display: block; }
+  max-width: 1200px;
+  color: #ddd; }
 
 @media screen and (min-width: 37.5em) {
   .content-area {
@@ -641,21 +615,7 @@ span {
   .site-content .widget-area {
     float: right;
     overflow: hidden;
-    width: 25%;
-    margin-top: 2em;
-    padding: 1.5em;
-    border-radius: 5px;
-    background: red;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(right, #870000 5%, #c80000);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, #870000 5%, #c80000);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, #870000 5%, #c80000);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to left, #870000 5%, #c80000);
-    /* Standard syntax */
-    mix-blend-mode: hard-light; }
+    width: 25%; }
 
   .site-footer {
     clear: both;
@@ -675,19 +635,8 @@ span {
 ## Posts
 --------------------------------------------------------------*/
 .post {
-  padding: 1px 1.5em 1.5em 1.5em;
-  border-radius: 5px;
-  background: red;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #870000 5%, #c80000);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #870000 5%, #c80000);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #870000 5%, #c80000);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #870000 5%, #c80000);
-  /* Standard syntax */
-  mix-blend-mode: hard-light; }
+  background-color: #6f0000;
+  padding: 0 1em 1em 1em; }
 
 .sticky {
   display: block; }
@@ -707,13 +656,6 @@ span {
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0; }
-
-.entry-title {
-  color: #ddd; }
-
-.comments-link,
-.edit_link {
-  padding-right: 2em; }
 
 /*--------------------------------------------------------------
 ## Pages
@@ -847,21 +789,7 @@ object {
   .site-content .widget-area {
     float: right;
     overflow: hidden;
-    width: 25%;
-    margin-top: 2em;
-    padding: 1.5em;
-    border-radius: 5px;
-    background: red;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(right, #870000 5%, #c80000);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, #870000 5%, #c80000);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, #870000 5%, #c80000);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to left, #870000 5%, #c80000);
-    /* Standard syntax */
-    mix-blend-mode: hard-light; }
+    width: 25%; }
 
   .site-footer {
     clear: both;
